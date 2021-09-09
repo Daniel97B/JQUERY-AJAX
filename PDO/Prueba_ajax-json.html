@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo de Ajax con jQuery, PHP y JSON</title>
+  <meta charset="utf-8">
+  <title>Ejemplo de Ajax con jQuery, PHP y JSON</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../CSS/Index9.css" type="text/css">
+  <link rel="stylesheet" href="../CSS/fontello.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+  <!--Creamos un container para almacenar todo-->
+  <div class="container-fluid">
+    <!--Fila donde almacenmos el header-->
+    <div class="row">
+      <header class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+          <!--Columna donde ira el link-->
+          <div class="col-1">
+            <!-- El imput donde ira el link para regrwesar al inicio -->
+            <imput type="checkbox" id="btn-mas">
+              <div class="otros">
+                <!--Link inicio-->
+                <a href="../index.html" class="icon-home"></a>
+              </div>
+            </imput>
+          </div>
+          <!--Columna donde ira El titulo y Ficha del aprendiz -->
+          <div class="col-11">
+            <h1 class="text-center">
+
+              <!--Insertamos la imagen y el texto del header-->
+              <img src="Img/1045px-Sena_Colombia_logo.svg.png" alt="Sena.png" class="img">
+              Ficha:2252471 - JQUERY
+            </h1>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col">
+        <br>
+        <!--Botones para visualizar la informacion correspondiente-->
+        <p>
+          <button class="btn text-white bg-dark" data-user="1">Dame los datos de la persona con ID = 1</button> -
+          <button class="btn text-white bg-dark" data-user="[1,2,3]">Dame los datos de las personas con ID = 1, ID = 2 e
+            ID = 3.</button> -
+          <button class="btn text-white bg-dark" data-user="0">Ningún usuario</button>
+        </p>
+        <div id="response-container"></div>
+      </div>
+      <div class="buton">
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="miscript.js"></script>
+  <link rel="stylesheet" href="../CSS/Index9.css" type="text/css">
+  <link rel="stylesheet" href="../CSS/fontello.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <script src="PHP/personas.php"></script>
+</body>
+
+</html>

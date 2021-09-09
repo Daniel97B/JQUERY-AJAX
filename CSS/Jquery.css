@@ -1,0 +1,41 @@
+/*Diseño del primer ejercicio*/
+#pandora{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid rgb(0, 87, 128);
+    padding: 5px;
+    text-align: center;
+}
+
+#horcruxes{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid rgb(72, 85, 72);
+    padding: 5px;
+    text-align: center;
+}
+
+/*Diseño De lista*/
+.gryffindor{
+        text-align: center;
+        
+        background-color: rgb(211, 248, 3);
+        border: 2px solid rgb(238, 15, 15);
+}
+.ravenclaw{
+    border:2px solid blue;
+    background: white;
+    text-align: center;
+}
+
+.hufflepuff{
+    border:2px solid black;
+    background: yellow;
+    text-align: center;
+}
+
+.slytherin{
+    border:2px solid green;
+    background: gray;
+    text-align: center;
+}
